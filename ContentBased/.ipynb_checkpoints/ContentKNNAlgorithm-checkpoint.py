@@ -84,7 +84,7 @@ class ContentKNNAlgorithm(AlgoBase):
     def estimate(self, u, i):
 
         if not (self.trainset.knows_user(u) and self.trainset.knows_item(i)):
-            raise PredictionImpossible('User and/or item is unknown.')
+            raise PredictionImpossible('User and/or item is unkown.')
         
         # Build up similarity scores between this item and everything the user rated
         neighbors = []
